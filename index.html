@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM10B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 10B 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes, en equipo, construyan un escenario de juego simple, implementen la lógica de "juego limpio" que diseñaron, y profundicen su discusión sobre el dilema ético planteado, reflexionando sobre cómo el Aprendizaje por Refuerzo (RL) podría ofrecer una solución a largo plazo.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡ Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡ "I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y preparar el entorno.</li>
+                                        <li><strong class="tactic-highlight">⚡ AI GYM:</strong> Refrescar el plan y la discusión conceptual de RL.</li>
+                                        <li><strong class="tactic-highlight">⚡ Brain Spark:</strong> Construcción del escenario, implementación del plan y discusión profunda.</li>
+                                        <li><strong class="tactic-highlight">⚡ Gnius STORM:</strong> Demostración de robots y reflexión final sobre la ética de la IA.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Un robot Nezha programado para seguir una regla de "juego limpio" en un escenario simple, demostrando al menos uno de los planes individuales.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit (con A.I. Lens) por equipo de 4 estudiantes.</li>
+                                        <li>Cinta adhesiva o bloques para crear "líneas de salida/meta" para cada equipo.</li>
+                                        <li>Tarjetas de tráfico (Stop, Go) del kit para cada equipo.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits (con A.I. Lens) listos.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, diálogos y tiempos.</li>
+                                        <li><strong>Preparación Física:</strong> Tener cinta adhesiva o bloques para que los equipos creen sus escenarios simples.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor y activar a la IA para la sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Da la bienvenida a los alumnos y guíalos para que activen a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, programadores éticos! Vamos a activar a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses para empezar la misión de hoy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Verificación de Interacción ⏰ 2 minutos</h3>
+                            <p>Monitorea la interacción de los alumnos con la IA, asegurándote de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo les está contestando y está listo para la acción. Si alguien no ha recibido respuesta, levante la mano para ayudarle.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
+                <p>Presentar el objetivo de la clase y asegurar que los equipos puedan crear su escenario de juego.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Contextualización ⏰ 2 minutos</h3>
+                            <p>Anuncia el inicio de la actividad y conecta con la discusión ética de la sesión anterior.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Equipos, es hora de poner las reglas en el código! La última vez, debatimos sobre las decisiones difíciles que un robot podría tener que tomar. Hoy, vamos a programar una regla de comportamiento, una regla de 'juego limpio', y continuaremos pensando en cómo podríamos enseñar a los robots a ser mejores compañeros en el futuro.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Construcción del Escenario ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 4) Instruye a los equipos para que creen un escenario de juego simple.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para probar estas reglas, cada equipo creará un pequeño 'campo de juego' en su mesa. Pueden usar cinta adhesiva o bloques para crear una "línea de salida" y una "línea de meta". Esto nos ayudará a simular un inicio y un final para nuestro robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) Presenta el objetivo concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Al final de la clase, podrán decir: <strong>'Mi equipo programó un robot que sigue una regla de comportamiento, y puedo explicar cómo el Aprendizaje por Refuerzo podría ayudar a un robot a tomar mejores decisiones por sí mismo.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 7 minutos</h2>
+                <p>Guiar a los alumnos para que refresquen su plan y el concepto de Aprendizaje por Refuerzo (RL).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Recordando la Misión y el Plan ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Anuncia la actividad y guía a los equipos para que recuperen su plan de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, equipos! Antes de empezar a programar, entremos al <strong>A.I. GYM</strong>. ¿Cuál era la regla de juego limpio de su robot? Vuelvan a describirle su regla a Xolo. Por ejemplo: <strong>'Xolo, nuestro robot no se mueve hasta que ve la tarjeta 'Go'.'</strong>. Él les devolverá el plan exacto para guiar su programación. ¡La clave es la variable que controla si la 'carrera ha iniciado' o no!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">fijar variable "carrera_iniciada" a FALSO
+
+POR SIEMPRE:
+    // Lógica para detectar tarjetas y cambiar el estado de "carrera_iniciada"
+    Switch function as Card
+    SI (Image contains traffic card(s) [Go]):
+        fijar "carrera_iniciada" a VERDADERO
+    SINO SI (Image contains traffic card(s) [Stop]):
+        fijar "carrera_iniciada" a FALSO
+    FIN SI
+    
+    // Lógica de movimiento basada en el estado de la carrera
+    SI (variable "carrera_iniciada" == VERDADERO):
+        nezha_motor_M1_velocidad(60)
+        nezha_motor_M2_velocidad(60)
+    SINO:
+        nezha_motor_M1_velocidad(0)
+        nezha_motor_M2_velocidad(0)
+    FIN SI</pre>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Recordatorio de Aprendizaje por Refuerzo (RL) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Conecta la programación con el concepto de RL.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ya tienen su plan fresco. Mientras programan, piensen en esto: ustedes están escribiendo la regla explícitamente. ¿Cómo podría el <strong>Aprendizaje por Refuerzo (RL)</strong>, con sus premios y castigos, ayudar a un robot a aprender esta regla por sí solo? ¡Esto nos lleva a pensar más allá de la programación tradicional!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
+                <p>Fases de construcción del escenario, programación del "juego limpio" y discusión profunda sobre la ética y RL.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Construcción del Escenario y Programación (Equipo y Rotación de Planes) ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Anuncia la actividad e indica a los equipos que construyan su escenario y comiencen a programar.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegó la hora del <strong>Brain Spark</strong>! ¡Manos a la obra, equipos! Usen su robot base (no necesitan mecanismos complejos) y construyan su "pista de carreras" simple con líneas de salida y meta. Luego, abran MakeCode. Recuerden que en la sesión pasada generaron varios planes individuales. <strong>Como equipo, elijan UNO de esos planes para empezar.</strong> Implementen el GCS de "juego limpio" elegido, prestando atención al uso de la variable booleana (carrera_iniciada). Prueben si el robot obedece las señales del "juez" (tarjetas 'Go' y 'Stop'). <strong>Una vez que este primer plan funcione, ¡roten y prueben los planes restantes, uno por uno!</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Discusión en Equipo (El Corazón de la Sesión) ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) Una vez que los robots funcionan, el profesor guía una discusión profunda sobre el dilema ético y el RL.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Excelente trabajo programando! Ahora, pausen sus robots y enfoquémonos en la discusión. Usando su robot como ejemplo, piensen en esto: <strong>"Vuelvan al robot futbolista. Su robot ahora sigue una regla simple. Pero en el dilema, las reglas chocan (marcar gol vs. no lastimar). Si ustedes fueran los programadores, ¿qué regla le pondrían como la más importante (la prioridad #1) y por qué?"</strong></p>
+                                 <p class="dialogue assistant">Ahora, piensen en el <strong>Aprendizaje por Refuerzo (RL)</strong>. Si no escribieran ninguna regla y solo tuvieran un robot que recibe 'premios' y 'castigos', ¿qué acciones premiarían? ¿Qué acciones castigarían para que, después de miles de intentos, el robot aprenda a ser un buen futbolista?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: El Futuro: ¿Programar o Aprender? ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) El profesor guía la conversación sobre los enfoques de programación ética en IA.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Finalmente, piensen en el futuro. ¿Creen que es mejor que los humanos programemos todas las reglas éticas en los robots, o que creemos sistemas de RL para que los robots las 'aprendan'? ¿Cuáles son los peligros de cada enfoque? ¡Compartan sus reflexiones en equipo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Demostración de los robots de "juego limpio" y compartición de las conclusiones del debate.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Share - Demo y Debate) ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Cada equipo demuestra su robot y comparte las conclusiones de su debate.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente trabajo, equipos! Es hora de su demostración final y de compartir las conclusiones de su debate. Cada equipo mostrará su robot de "juego limpio" y un portavoz responderá: <strong>"Para el dilema del futbolista, nuestra regla prioritaria sería..."</strong> y <strong>"Para enseñarle con RL, premiaríamos [acción X] y castigaríamos [acción Y]."</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) Cierra la sesión y conecta con el gran desafío final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Esta ha sido una de las sesiones más importantes! Han programado un comportamiento basado en valores y, más crucialmente, han debatido sobre el futuro de la IA. No hay respuestas fáciles, pero hacer las preguntas correctas es el primer paso para crear un futuro tecnológico responsable. ¡Están listos para el gran desafío final!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
